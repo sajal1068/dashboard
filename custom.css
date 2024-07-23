@@ -1,0 +1,163 @@
+
+:root {
+    --white: #ffffff;
+    --gray: #555555;
+}
+
+ul.cases{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;    
+    height: 100%;
+    width: 100%; 
+    background-image: url('count-frame.svg');      
+    background-repeat: no-repeat;    
+    background-position: center;
+    box-sizing: border-box;
+    position: relative;
+   
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;   
+    justify-self: center;
+    align-items: center;
+    border: solid green 1px;
+}
+ul.cases li{   
+    position: relative;
+    max-width: 700px;
+}
+ul.cases li .left{
+    padding-right:30% ;
+}
+ul.cases li .right{
+    padding-left:30% ;
+}
+.cases li:nth-child(1){
+    width: 100%;
+    padding-top: 8%;
+    text-align: center;
+}
+.cases li:nth-child(2){
+    padding-top: 8%;
+    width: 50%;
+}
+.cases li:nth-child(3){
+    padding-top: 8%;
+    width: 50%;
+}
+.cases li:nth-child(4){
+    padding-top: 8%;
+    width: 100%;
+}
+.cases li:nth-child(5){
+    padding-top: 8%;
+    width: 50%;
+}
+.cases li:nth-child(6){
+    padding-top: 8%;
+    width: 50%;
+}
+.cases li:nth-child(7){
+    padding-top: 8%;
+    width: 100%;
+    padding-bottom: 8%;
+}
+.contentBox{
+    text-align: center;
+}
+.contentBox strong{
+    display: block;
+    color: var(--white);
+    font-size: clamp(0.12rem , 4vh ,1.25rem) ;
+    
+}
+.contentBox span{
+    max-width: 160px;
+    font-size: clamp(9px , 4vh ,14px) ;
+    display: block;
+    color: var(--white);
+    margin: auto;
+    line-height: 1.15;    
+}
+.centerText strong{
+    display: block;
+    color: var(--gray);
+    font-size: clamp(12px , 100% ,1.25rem) ;    
+}
+.centerText span{
+    max-width: 160px;
+    display: block;
+    color: var(--gray);
+    margin: auto;
+    line-height: 1.15;
+}
+
+
+@media (max-width: 575.98px) { 
+    .cases{
+        background-size: contain;
+        padding: 0;        
+    }
+ }
+ @media (min-width: 576px) and (max-width: 767.98px) {  }
+
+@media (min-width: 767.98px) { 
+    .cases{
+        background-size: contain;
+        padding: 0;        
+    }
+ }
+
+
+@media (min-width: 991.98px) { 
+    .cases{
+        background-size: contain;
+        padding: 0;        
+    }
+}
+
+
+@media (min-width: 1199.98px) { 
+    .cases li:nth-child(4) {
+        padding-top: 9%;        
+    } 
+    ul.cases{
+        background-size: cover;
+        padding: 0;
+    }    
+}
+@media (min-width: 1399.98px) {    
+    .cases li:nth-child(4) {
+        padding-top: 11%;        
+    }    
+    ul.cases li .left {
+        padding-right: 17%;
+    } 
+    ul.cases li .right {
+        padding-left: 17%;
+    } 
+    ul.cases{
+        background-size: cover;
+        padding: 10px 0;
+    }
+    
+}
+
+
+
+@media (max-width: 575.98px) {  }
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+
+@media (min-width: 1200px) {  }
+
+
+@media (min-width: 768px) and (max-width: 1199.98px) {  }
