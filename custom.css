@@ -20,7 +20,7 @@ ul.cases{
     flex-wrap: wrap;   
     justify-self: center;
     align-items: center;
-    border: solid green 1px;
+    
 }
 ul.cases li{   
     position: relative;
@@ -67,13 +67,10 @@ ul.cases li .right{
 }
 .contentBox strong{
     display: block;
-    color: var(--white);
-    font-size: clamp(0.12rem , 4vh ,1.25rem) ;
-    
+    color: var(--white);  
 }
 .contentBox span{
-    max-width: 160px;
-    font-size: clamp(9px , 4vh ,14px) ;
+    max-width: 160px;   
     display: block;
     color: var(--white);
     margin: auto;
@@ -95,37 +92,106 @@ ul.cases li .right{
 
 @media (max-width: 575.98px) { 
     .cases{
-        background-size: contain;
-        padding: 0;        
-    }
- }
- @media (min-width: 576px) and (max-width: 767.98px) {  }
-
-@media (min-width: 767.98px) { 
-    .cases{
-        background-size: contain;
-        padding: 0;        
-    }
- }
-
-
-@media (min-width: 991.98px) { 
-    .cases{
-        background-size: contain;
-        padding: 0;        
-    }
-}
-
-
-@media (min-width: 1199.98px) { 
-    .cases li:nth-child(4) {
-        padding-top: 9%;        
-    } 
-    ul.cases{
-        background-size: cover;
+        background-size: 100%;
+        padding: 0;   
+        min-height: 350px;     
+     }
+     .cases li{
         padding: 0;
-    }    
-}
+    }     
+     .contentBox strong{
+        font-size: 0.9rem;
+    }
+    .contentBox span{
+        font-size: 0.72rem;
+        max-width: 90px;
+    } 
+    .cases li:nth-child(1) {       
+        padding-top: 14px;        
+    }
+    .cases li:nth-child(2), .cases li:nth-child(3){       
+        padding-top: 0px;        
+    }
+    .cases li:nth-child(4){       
+        padding-top: 0;        
+    }
+    .cases li:nth-child(5), .cases li:nth-child(6){       
+        padding-top: 5px;        
+    }
+    .cases li:nth-child(7){       
+        padding-top: 5px; 
+        padding-bottom: 10px;       
+    }
+    ul.cases li .left {
+        padding-right: 25%;
+    }
+    ul.cases li .right {
+        padding-left: 25%;
+    }
+ }
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+    .cases{
+        background-size: contain;
+        padding: 0;        
+     }
+
+     
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .cases{
+        background-size: contain;
+        padding: 0;        
+    } 
+    .contentBox strong{
+        font-size: 0.9rem;
+    }
+    .contentBox span{
+        font-size: 0.72rem;
+        max-width: 90px;
+    }  
+    .cases li{
+        padding: 14px 0;
+    } 
+    .cases li:nth-child(1) {       
+        padding-top: 24px;        
+    }
+    .cases li:nth-child(2), .cases li:nth-child(3){       
+        padding-top: 5px;        
+    }
+    .cases li:nth-child(4){       
+        padding-top: 5px;        
+    }
+    .cases li:nth-child(5), .cases li:nth-child(6){       
+        padding-top: 5px;        
+    }
+    .cases li:nth-child(7){       
+        padding-top: 5px;        
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .cases{
+        background-size: contain;
+        padding: 0;        
+    }
+    .contentBox strong ,.centerText strong{
+        font-size: 1.12rem;
+    }
+    .contentBox span ,.centerText span{
+        font-size: 0.89rem;
+    }  
+  }
+    @media (min-width: 1199.98px) { 
+        .cases li:nth-child(4) {
+            padding-top: 9%;        
+        } 
+        ul.cases{
+            background-size: contain;
+            padding: 0;
+        }    
+    }
+
 @media (min-width: 1399.98px) {    
     .cases li:nth-child(4) {
         padding-top: 11%;        
@@ -139,6 +205,12 @@ ul.cases li .right{
     ul.cases{
         background-size: cover;
         padding: 10px 0;
+    }
+    .contentBox strong{
+        font-size: 1.2rem;
+    }
+    .contentBox span{
+        font-size: 0.9rem;
     }
     
 }
