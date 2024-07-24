@@ -128,7 +128,12 @@ ul.cases li .right{
     ul.cases li .right {
         padding-left: 25%;
     } */
-
+    .cases li:nth-child(2), .cases li:nth-child(3){       
+        padding-top: 6%;        
+    }
+    .cases li:nth-child(5), .cases li:nth-child(6){       
+        padding-top: 1%;        
+    }
     .contentBox strong{
         font-size: 0.9rem;
     }
