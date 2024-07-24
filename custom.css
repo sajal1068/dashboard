@@ -92,11 +92,11 @@ ul.cases li .right{
 
 @media (max-width: 575.98px) { 
     .cases{
-        background-size: 100%;
-        padding: 0;   
-        min-height: 350px;     
+        
+        background-size: contain;
+        padding: 0;           
      }
-     .cases li{
+     /* .cases li{
         padding: 0;
     }     
      .contentBox strong{
@@ -122,6 +122,20 @@ ul.cases li .right{
         padding-top: 5px; 
         padding-bottom: 10px;       
     }
+    ul.cases li .left {
+        padding-right: 25%;
+    }
+    ul.cases li .right {
+        padding-left: 25%;
+    } */
+
+    .contentBox strong{
+        font-size: 0.9rem;
+    }
+    .contentBox span{
+        font-size: 0.72rem;
+        max-width: 90px;
+    } 
     ul.cases li .left {
         padding-right: 25%;
     }
