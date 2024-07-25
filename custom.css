@@ -333,6 +333,104 @@ ul.malefemalCount{
 /*  New  */
 
 
+
+
+.comparison-table table{
+    background:#E5F2FA;
+}
+
+.comparison-table tr td,.comparison-table tr th {background-color: #E5F2FA !important;}
+
+.comparison-table thead tr:nth-of-type(1){    
+    /* background: #cfe2ff; */
+    color: #084298;
+    background: #2258BF!important;    
+    color: #fff;    
+    font-weight: 600;
+    font-size: 1.12rem;    
+}
+.comparison-table table thead tr:nth-child(1) th{    
+    background-color: #39B9EA!important;
+    color:var(--white)!important;
+   
+}
+
+.comparison-table table thead tr:nth-child(2) th{    
+    background-color: rgba(5, 185, 240, 0.05)!important;
+    color:#07556B;
+   
+}
+.comparison-table table img{
+    max-height: 50px;
+}
+
+
+
+
+
+.comparison-table .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .comparison-table .table-bordered > tfoot > tr > td, .comparison-table .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .comparison-table .table-bordered > thead > tr > th {
+    border: 2px solid white; 
+}
+
+.maleIcon{
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+    padding: 15px 15px;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.maleIcon .male{
+    font-size: 0.99rem;
+    color: #07556B;
+    font-weight: 600;
+    position: relative;
+    padding: 5px 0 5px;
+    width: 100%;
+    text-align: center;
+}
+.maleIcon .male::after{    
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    margin: auto;
+    background-color: #07556B;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.maleIcon .female{
+    font-size: 0.99rem;
+    color: #E73F78;
+    font-weight: 600;
+    position: relative;
+    padding: 5px 0 5px;
+    width: 100%;
+    text-align: center;
+}
+.maleIcon strong{
+    font-size: 1.15rem;
+    color: #555;
+    font-weight: 600;
+}
+.maleIcon .female::after{    
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    margin: auto;
+    background-color: #E73F78;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
 @media (max-width: 575.98px) { 
     .cases{        
         background-size: contain;
@@ -423,7 +521,7 @@ ul.malefemalCount{
   }
     @media (min-width: 1199.98px) { 
         .cases li:nth-child(4) {
-            padding-top: 9%;        
+            padding-top: 4%;        
         } 
         ul.cases{
             background-size: contain;
@@ -434,7 +532,24 @@ ul.malefemalCount{
         }
         .DashboardCount li{
             width: calc(20% - 15px);
-        }    
+        } 
+        .contentBox strong ,.centerText strong{
+            font-size: 1.12rem;
+        }
+        .contentBox span ,.centerText span{
+            font-size: 0.89rem;
+        }  
+        ul.cases li .left {
+            padding-right: 20%;
+        } 
+        ul.cases li .right {
+            padding-left: 20%;
+        } 
+        .cases li:nth-child(7) {
+            padding-top: 4%;
+            width: 100%;
+            padding-bottom: 8%;
+          }
     }
 
 @media (min-width: 1399.98px) {    
