@@ -2,6 +2,34 @@
 :root {
     --white: #ffffff;
     --gray: #555555;
+    --lightBlue:#F2FBFE;
+    --darkBlue:#6ED4F1;
+    --lightyellow: #F8E6CE;
+    --blue: #0462FF;
+    --blueBtn:#05B9F0;
+
+   
+
+    --orange:#FA8B37;
+    --orangeBg:#FEF7F1;
+    --orangeBdr:#FCAE73;
+
+    --pink:#E73F78;
+    --pinkeBg:#FEF1F5;
+    --pinkBdr:#EE79A1;
+    --purple:#C04AA0;
+    --purpleBg:#F9EFF6;
+    --purpleBdr:#C04AA0;
+    --green:#00B7BD;
+    --greenBg:#E5F8F8;
+    --greenBdr:#3DC8CD;
+
+    
+
+    
+
+
+    
 }
 
 ul.cases{
@@ -13,14 +41,12 @@ ul.cases{
     background-repeat: no-repeat;    
     background-position: center;
     box-sizing: border-box;
-    position: relative;
-   
+    position: relative;   
     margin: 0;
     display: flex;
     flex-wrap: wrap;   
     justify-self: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 ul.cases li{   
     position: relative;
@@ -89,45 +115,229 @@ ul.cases li .right{
     line-height: 1.15;
 }
 
+/*  New  */
+ul.DashboardCount{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+
+li .iconBox {
+    width: 100%;   
+    box-sizing: border-box;
+    padding: 25px 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    border-radius: 4px;
+    margin-bottom: 15px;
+    min-height: 170px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+li .iconBox:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+
+
+
+.iconBox img{
+    max-height: 90px;
+}
+
+.iconBox .CountText{
+    width: calc(100% - 20px);
+    padding: 10px 5px;
+    background: inherit;
+    color: var(--white);
+    border-radius: 4px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.29rem;
+}
+li.blue .iconBox{
+    background: var(--lightBlue);
+    border: solid var(--darkBlue) 1px;
+}
+.blue .CountText{
+    background: var(--blueBtn);
+}
+li.orange .iconBox{
+    background: var(--orangeBg);
+    border: solid var(--orangeBdr) 1px;
+}
+.orange .CountText{
+    background-color:var(--orange);
+}
+li.pink .iconBox{
+    background: var(--pinkeBg);
+    border: solid var(--pinkBdr) 1px;
+}
+.pink .CountText{
+    background-color:var(--pink);
+}
+li.purple .iconBox{
+    background: var(--pinkeBg);
+    border: solid var(--purpleBdr) 1px;
+}
+.purple .CountText{
+    background-color:var(--purple);
+}
+li.green .iconBox{
+    background: var(--greenBg);
+    border: solid var(--greenBdr) 1px;
+}
+.green .CountText{
+    background-color:var(--green);
+}
+/* li.blue .iconBox{
+    background: var(--lightBlue);
+    border: solid var(--darkBlue) 1px;
+}
+li.blue .iconBox{
+    background: var(--lightBlue);
+    border: solid var(--darkBlue) 1px;
+}
+li.blue .iconBox{
+    background: var(--lightBlue);
+    border: solid var(--darkBlue) 1px;
+} */
+.iconBox figcaption{
+    font-size: 1.20rem;
+    font-weight: 600;
+    color: var(--gray);
+    margin: 15px 0;
+}
+ul.screenResult{
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+ul.screenResult li:nth-child(1){
+    width: 100%;
+    background-color: var(--lightyellow);
+    padding: 10px 15px;
+    min-height: 50px;
+}
+ul.screenResult li:nth-child(2),ul.screenResult li:nth-child(2){
+    width: 50%;
+}
+
+ul.malefemalCount{
+    width: 100%;
+    list-style: none;
+    margin: 10px auto;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #E99717; */
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.maleCount{
+    width: auto;
+    box-sizing: border-box;   
+    min-height: 140px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;    
+    background-color: #F1F4F9;
+
+    border: 1px solid rgb(250 139 55 / 16%);
+    background: rgb(250 139 55 / 4%);
+    
+}
+.maleCount strong{
+    font-size: 1.45rem;
+    color: #313e58;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.malefemalCount img{
+    max-height: 50px;
+}
+.malefemalCount li:nth-child(1){
+    width: 100%;
+    margin-bottom: 8px;
+    
+}
+.malefemalCount li:nth-child(3) img{
+    height: 30px;
+    margin: auto 5px;
+}
+.malefemalCount li:nth-child(5) img{
+    height: 30px;
+    margin: auto 5px;
+}
+
+.malefemalCount li:nth-child(5){
+    
+}
+.malefemalResultCount{
+    width: auto;
+    box-sizing: border-box;   
+    min-height: 140px;
+    padding: 25px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;    
+    /* background-color: var(--blue); */
+    /* box-shadow: rgba(4, 98, 225, 0.24) 0px 3px 8px; */
+    font-size: 2.0rem;
+    color: var(--gray);
+    font-weight: 600;
+    background-color: rgba(5, 185, 240, 0.05);
+    border: solid #6ED4F1 1px;
+}
+.titalBox {
+    width: 100%;
+    min-height: 50px;
+    border-radius: 4px;
+    padding-left: 15px;
+    border: 1px solid #bae3fb;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    background: #a6bbdf24;
+    color: var(--gray);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.titalBox span {
+    color: #0078D1;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 10px;
+}
+/*  New  */
+
 
 @media (max-width: 575.98px) { 
-    .cases{
-        
+    .cases{        
         background-size: contain;
         padding: 0;           
-     }
-     /* .cases li{
-        padding: 0;
-    }     
-     .contentBox strong{
-        font-size: 0.9rem;
-    }
-    .contentBox span{
-        font-size: 0.72rem;
-        max-width: 90px;
-    } 
-    .cases li:nth-child(1) {       
-        padding-top: 14px;        
-    }
-    .cases li:nth-child(2), .cases li:nth-child(3){       
-        padding-top: 0px;        
-    }
-    .cases li:nth-child(4){       
-        padding-top: 0;        
-    }
-    .cases li:nth-child(5), .cases li:nth-child(6){       
-        padding-top: 5px;        
-    }
-    .cases li:nth-child(7){       
-        padding-top: 5px; 
-        padding-bottom: 10px;       
-    }
-    ul.cases li .left {
-        padding-right: 25%;
-    }
-    ul.cases li .right {
-        padding-left: 25%;
-    } */
+     }     
     .cases li:nth-child(2), .cases li:nth-child(3){       
         padding-top: 6%;        
     }
@@ -147,14 +357,18 @@ ul.cases li .right{
     ul.cases li .right {
         padding-left: 25%;
     }
+    .DashboardCount li{
+        width: calc(50% - 15px);
+     } 
  }
  @media (min-width: 576px) and (max-width: 767.98px) { 
     .cases{
         background-size: contain;
         padding: 0;        
-     }
-
-     
+     } 
+     .DashboardCount li{
+        width: calc(50% - 15px);
+     }     
   }
 
   @media (min-width: 768px) and (max-width: 991.98px) {
@@ -187,6 +401,9 @@ ul.cases li .right{
     .cases li:nth-child(7){       
         padding-top: 5px;        
     }
+    .DashboardCount li{
+        width: calc(33% - 15px);
+    }   
   }
 
   @media (min-width: 992px) and (max-width: 1199.98px) { 
@@ -199,6 +416,9 @@ ul.cases li .right{
     }
     .contentBox span ,.centerText span{
         font-size: 0.89rem;
+    }     
+    .DashboardCount li{
+        width: calc(25% - 9px);
     }  
   }
     @media (min-width: 1199.98px) { 
@@ -208,6 +428,12 @@ ul.cases li .right{
         ul.cases{
             background-size: contain;
             padding: 0;
+        }
+        ul.DashboardCount{           
+            justify-content: space-between;
+        }
+        .DashboardCount li{
+            width: calc(20% - 15px);
         }    
     }
 
@@ -222,7 +448,7 @@ ul.cases li .right{
         padding-left: 17%;
     } 
     ul.cases{
-        background-size: cover;
+        background-size: contain;
         padding: 10px 0;
     }
     .contentBox strong{
@@ -231,6 +457,9 @@ ul.cases li .right{
     .contentBox span{
         font-size: 0.9rem;
     }
+    .DashboardCount li{
+        width: calc(20% - 15px);
+    } 
     
 }
 
