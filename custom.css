@@ -430,6 +430,42 @@ ul.malefemalCount{
     left: 0;
     right: 0;
 }
+ .bg-green{
+    background-color: #2AAEB3!important;
+ }
+ .bg-orange{
+    background-color: #FF6E3F!important;
+ }
+ .bg-blue{
+    background-color: #2FBEE6!important;
+ }
+ .bg-darkblue{
+    background-color: #4C6BBB!important;
+ }
+.box{
+    width: 100%;
+    box-sizing: border-box;
+    background: inherit;
+    padding: 15px 15px;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+.mytable tr td:nth-child(3) {
+    background-color: #F2FBFE!important;
+}
+.mytable tr td:nth-child(2) {
+    background-color: #FEF1F5!important;
+}
+.mytable tbody tr td:nth-child(1) {
+    background-color: #E5F8F8!important;
+}
+
 
 @media (max-width: 575.98px) { 
     .cases{        
